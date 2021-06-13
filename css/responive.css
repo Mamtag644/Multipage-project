@@ -1,0 +1,112 @@
+@media screen and (min-width: 768px) and (max-width: 1040px) {
+	.header {
+		height: 500px;
+	}
+
+	.overlay {
+		height: 500px;
+	}
+
+	.banner-left {
+		margin-left: 20px;
+	}
+	.banner-right img {
+		width: 400px;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 765px) {
+
+    .header {   
+        background-position: center;
+    }
+
+
+
+	/* navbar */
+
+	nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition:top 1s ease ;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+		z-index: 1;
+    }
+
+	
+	nav .mainMenu li a:hover{
+		background-color: rgba(13, 138, 111 );
+		color: #000;
+		border-radius: 5px;
+	}
+	
+
+
+	.menu {
+		display: none;
+	}
+
+	.banner-heading {
+		flex-wrap: wrap;
+        padding: 80px 0;
+	}
+
+	.banner-right img {
+		width: 300px;
+	}
+
+	.upper-footer {
+		justify-content: center;
+	}
+	.categary h4 {
+		font-size: 20px;
+	}
+
+	.access h4 {
+		font-size: 20px;
+	}
+
+	#dynamicpart {
+		margin: 0;
+		text-align: center;
+		padding: 20px 0;
+	}
+	#dynamicpart h3 {
+		font-size: 1.2rem;
+	}
+	#dynamicpart p {
+		font-size: 14px;
+	}
+
+	/* banner  */
+	.banner-logo img {
+		margin: 0 20px;
+	}
+
+    .inner-heading h2 {
+        font-size: 1.2rem;
+       
+    }
+
+    .inner-heading p {
+       font-size: 12px;
+    }
+}

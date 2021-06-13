@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------- navbar-------------------------- */
+
+nav{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav .logo {
+	display: flex;
+	align-items: center;
+	margin: 0 20px;
+}
+nav .logo span{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 5px;
+    font-family: roboto sans-serif;
+}
+
+nav .logo span a{
+    text-decoration: none;	
+    color: #fff;
+}
+
+
+
+nav .logo img {
+	width: 40px;
+}
+
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+/*-------------------- image boxes-------------------- */
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+.container .image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+.image-box img{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+.text-box{
+    padding:0  40px;
+}
+
+/* --------------------------------------image row reverse-------------------------------------- */
+.container .image-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+    flex-direction: row-reverse;
+}
+.image-box img{
+    width: 300px;
+    
+}
+.text-box{
+    padding:0  40px;
+}
+
+
+
+/*-------------------- footer-------------------- */
+
+.footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img{
+    width: 80px;
+}
+.footer-logo span{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.footer-ul{
+    list-style: none;
+}
+.footer-ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+
+
+/* scroll top bottom */
+
+.scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background-color: rgba(13, 138, 111 );
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.scrollToTop-btn.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+
+/*--------------------- media query--------------------- */
+
+
+@media(max-width: 800px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition:top 1s ease ;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+}

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------------- navbar-------------------------- */
+
+nav{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav .logo {
+	display: flex;
+	align-items: center;
+	margin: 0 20px;
+}
+nav .logo span{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 5px;
+    font-family: roboto sans-serif;
+}
+
+nav .logo span a{
+    text-decoration: none;	
+    color: #fff;
+}
+
+
+
+nav .logo img {
+	width: 40px;
+}
+
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.contact-form{
+    width: 100%;
+    height: 100vh;
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inner-form{
+    background: #fff;
+    width: 40%;
+    margin: auto;
+    /* height: 500px; */
+    padding:60px 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inner-input{
+    margin: 20px 0;
+    
+}
+
+
+input, textarea{
+    padding: 10px 140px 10px 10px;
+    border-radius: 5px;
+    
+}
+
+#btn a{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.check input{
+    margin: 10px;
+}
+.check span{
+    color: rgb(177, 67, 67);
+}
+.inner-form h2::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: brown;
+    display:inline-block ;
+    text-align: center;position: relative;
+    top: 50%;
+}
+fieldset{
+        width: 50%;
+        text-align: center;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 2px solid black;
+    
+}
+legend{
+    font-size: 20px;
+}
